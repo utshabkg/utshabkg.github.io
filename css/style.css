@@ -521,6 +521,14 @@ a {
   .exp a{
     color: #6ebfb5;
   }
+  .expc{
+    color: #0779e4;
+    font-size: 24px;
+  }
+  .exps{
+    color: #d92027;
+    font-size: 24px;
+  }
 
 .blog-entry {
   -webkit-transition: .3s all ease;
