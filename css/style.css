@@ -650,7 +650,9 @@ a {
   letter-spacing: .2rem;
   color: rgba(255, 255, 255, 0.5) !important; }
 
-
+.img-fluid{
+  border-radius: 50%;
+}
 
 /* 
   h1 {
