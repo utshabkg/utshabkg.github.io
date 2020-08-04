@@ -661,6 +661,15 @@ a {
 .img-fluid{
   border-radius: 50%;
 }
+.calender{
+  background: #393e46;
+}
+.logo{
+  text-align: center;
+  border: 1px solid #fff;
+  background-color: #393e46;
+  padding : 15px 0px 0px 25px;
+}
 
 /* 
   h1 {
