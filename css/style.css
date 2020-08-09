@@ -724,7 +724,7 @@ a {
 }
 :root {
     --dark-green: #9cc675;
---dark-yellow: #bac964;
+--dark-yellow: #393e46;
 --extra-light-brown:#fdf0d7;
 --light-brown: #ecd5ab;
 --dark-brown:#915b40;
@@ -732,7 +732,7 @@ a {
 --light-red:#f3ac99;
 --light-teal:#a6c8cc;
 --light-gray:#ddd5d6;
-    --theme-color2: #bac964;
+    --theme-color2: #393e46;
 }
 
 
@@ -803,12 +803,14 @@ font-size: 18px;
 letter-spacing: 0.04em;
 line-height: 35px;
 text-align: left;
+color: #bac964;
 }
 .testimonial .designation {
 font-size: 16px;
+font-weight: bold;
 letter-spacing: 0.04em;
 text-align: left;
-color: #000;
+color: #d92027;
 
 }
 .unt {
