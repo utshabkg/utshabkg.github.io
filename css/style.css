@@ -18,6 +18,9 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
+  .mb-t{
+    text-align: justify;
+  }
 ::-moz-selection {
   background: #000;
   color: #fff; }
@@ -803,14 +806,14 @@ font-size: 18px;
 letter-spacing: 0.04em;
 line-height: 35px;
 text-align: left;
-color: #bac964;
+
 }
 .testimonial .designation {
 font-size: 16px;
 font-weight: bold;
 letter-spacing: 0.04em;
 text-align: left;
-color: #d92027;
+color: #fff;
 
 }
 .unt {
