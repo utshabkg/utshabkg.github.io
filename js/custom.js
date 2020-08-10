@@ -462,7 +462,8 @@ var galleryThumbs = new Swiper('.gallery-thumbs', {
     effect: 'coverflow',
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: '2',
+	slidesPerView: '3',
+	//loop: true,
     // coverflowEffect: {
     //   rotate: 50,
     //   stretch: 0,
@@ -487,7 +488,8 @@ var galleryTop = new Swiper('.swiper-container.testimonial', {
     spaceBetween: 50,
     autoplay: {
       delay: 30000,
-      disableOnInteraction: false,
+	  disableOnInteraction: false,
+	  //loop: true,
     },
     direction: 'vertical',
     pagination: {
