@@ -5,7 +5,7 @@ body {
   line-height: 1.7;
   font-size: 16px;
   font-weight: 300;
-  /* font-family: "Lato", sans-serif; */
+  font-family: "Roboto", sans-serif;
 }
 
 .p1-gradient-bg,
@@ -223,6 +223,7 @@ a:active {
 }
 .site-hero h1 strong {
   font-weight: 800;
+  letter-spacing: 2px;
 }
 @media (min-width: 768px) {
   .site-hero h1 {
@@ -233,6 +234,7 @@ a:active {
 .site-hero .lead {
   font-weight: 200;
   color: #fff;
+  letter-spacing: 1px;
 }
 .site-hero .lead {
   line-height: 2;
@@ -348,6 +350,9 @@ a:active {
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 0.2rem;
+}
+.btn-primary {
+  margin-right: 10px;
 }
 .btn:active,
 .btn:focus {
@@ -670,7 +675,7 @@ a:active {
   box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.1);
   background: #333;
   border-radius: 5px;
-  height: 510px;
+  height: 535px;
 }
 .blog-entry:hover,
 .blog-entry:active,
@@ -1059,7 +1064,7 @@ body2 {
   padding-right: 100px;
 }
 .swiper-container.testimonial {
-  height: 65vh;
+  height: 75vh;
 }
 .testimonial-section .user-saying {
   background: var(--theme-color2);
@@ -1089,7 +1094,7 @@ body2 {
   margin: 0;
 }
 .quote-icon {
-  margin-top: 30px;
+  margin-top: 40px;
   width: 34px;
   display: block;
   margin-bottom: 24px;
