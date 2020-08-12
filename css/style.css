@@ -82,7 +82,7 @@ a {
     background: transparent !important; }
     @media (max-width: 991.98px) {
       .site-navbar.bg-light {
-        background: #fff !important;
+        background: #444 !important;
         top: 0; }
         .site-navbar.bg-light .navbar-brand {
           display: inline-block;
@@ -100,7 +100,7 @@ a {
     letter-spacing: .2em; }
     @media (max-width: 991.98px) {
       .site-navbar .navbar-nav > li > a {
-        color: rgba(0, 0, 0, 0.7) !important; } }
+        color: #fff !important; } }
   .site-navbar .navbar-nav.active > a {
     color: #bac964 !important; }
   .site-navbar.scrolled {
@@ -116,7 +116,7 @@ a {
     -ms-transform: translateY(0%);
     transform: translateY(0%); }
     .site-navbar.scrolled.bg-light {
-      background: #fff !important; }
+      background: #444 !important; }
     .site-navbar.scrolled .navbar-brand {
       display: inline-block;
       font-size: 18px;
@@ -141,7 +141,7 @@ a {
     .site-navbar.scrolled .dropdown > a:before {
       color: rgba(0, 0, 0, 0.4); }
     .site-navbar.scrolled .navbar-nav > li > a {
-      color: rgba(0, 0, 0, 0.7) !important; }
+      color: #fff !important; }
       .site-navbar.scrolled .navbar-nav > li > a:hover {
         color: #bac964 !important; }
       .site-navbar.scrolled .navbar-nav > li > a.active {
@@ -341,16 +341,16 @@ a {
   .single-portfolio .relative {
     margin-bottom: 20px; }
   .single-portfolio .p-inner {
-    text-align: center; 
+    text-align: center;
   }
     .single-portfolio .p-inner h4 {
-      font-size: 20px; 
+      font-size: 20px;
       box-shadow:0px 1px 10px 2px rgba(0,0,0,0.2);}
     .single-portfolio .p-inner .cat {
       font-size: 12px;
       text-transform: uppercase;
       color: #cccccc; }
-      
+
 
 /*--------- Start Portfolio Area -------------*/
 .portfolio-area .primary-btn {
@@ -456,7 +456,7 @@ a {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center; 
+  text-align: center;
 }
 
 .single-portfolio:hover .middle {
@@ -477,7 +477,7 @@ a {
         color: #fe6845; }
         .django h4 {
             color: #d3de32; }
-            
+
           .pygame h4 {
             color: #eebb4d ; }
 
@@ -517,7 +517,7 @@ a {
 
   .resume-item *:last-child {
     margin-bottom: 0; }
-  
+
   .exp h3{
     color: #2fc4b2;
   }
@@ -664,17 +664,23 @@ a {
 .img-fluid{
   border-radius: 50%;
 }
-.calender{
-  background: #5c8d89;
+.calender {
+  background: #333;
+  border: none !important;
+  border-radius: 10px;
 }
-.logo{
+.logo {
   text-align: center;
-  border: 1px solid #fff;
-  background-color: #74b49b;
-  padding : 15px 0px 0px 25px;
+  /* border: 1px solid #fff; */
+  background-color: #222;
+  padding: 15px 0px 0px 25px;
+  margin-bottom: 40px;
+}
+.logo img {
+  margin-right: 10px;
 }
 
-/* 
+/*
   h1 {
     box-shadow:0px 1px 10px 2px rgba(0,0,0,0.2);
     border-bottom: 3px solid #00bfeb;
@@ -928,4 +934,8 @@ margin: 0;
 width: 38px;
 display: block;
 margin-bottom: 30px;
+}
+.github-info {
+  max-width: 90%;
+  margin: 0 auto;
 }
