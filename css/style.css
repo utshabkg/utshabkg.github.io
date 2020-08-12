@@ -1104,3 +1104,162 @@ body2 {
   max-width: 90%;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+  .blog-entry {
+    height: 620px;
+  }
+}
+
+@media screen and (max-width: 763px) {
+  .resume-heading {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .github-info {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .about-passion {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-ask {
+    font-size: 14px;
+  }
+
+  .blog-entry {
+    height: 440px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo img {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 475px) {
+  .site-section {
+    padding: 2em;
+  }
+
+  .title-mb {
+    margin-bottom: 2.1rem !important;
+  }
+
+  .section-heading {
+    margin-bottom: 22px !important;
+  }
+
+  #btn-social {
+    margin-top: 20px;
+  }
+
+  .form-group .btn {
+    margin-top: 15px;
+    padding: 0.8rem !important;
+    font-size: 11px !important;
+  }
+
+  .social-item {
+    height: 38px !important;
+    width: 38px !important;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  #card-tf {
+    height: 375px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .calender {
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar {
+    padding: 0.3rem 0.5rem !important;
+  }
+
+  .site-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .site-section {
+    padding: 2rem 0.2rem;
+  }
+
+  .section-heading h2 {
+    font-size: 27px;
+  }
+
+  #section-portfolio {
+    padding-bottom: 0.4rem;
+  }
+
+  .title-mb {
+    margin-bottom: 0.8rem !important;
+  }
+
+  .about-passion {
+    font-size: 1rem;
+    margin-bottom: 1.4rem;
+  }
+
+  .resume-heading {
+    margin-top: 1.5rem;
+    margin-bottom: 1.85rem !important;
+  }
+
+  #resume-education {
+    margin-top: 0.5rem !important;
+  }
+
+  .blog-entry {
+    height: 455px;
+  }
+
+  .logo img {
+    height: 21px !important;
+    width: 21px !important;
+    margin-bottom: 13px;
+  }
+
+  .github-info {
+    padding-bottom: 1.5rem;
+  }
+
+  .social-item {
+    height: 35px !important;
+    width: 35px !important;
+  }
+
+  .btn-utshab {
+    margin-top: 20px;
+  }
+
+  .site-footer {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 437px) {
+  #btn-social {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .blog-entry {
+    height: 500px;
+  }
+}
