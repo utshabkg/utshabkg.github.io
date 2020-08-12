@@ -9,6 +9,18 @@
   padding: 16px 25px;
 }
 
+@media screen and (max-width: 615px) {
+  .calendar {
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 614px) {
+  .calendar {
+    padding: 8px 0;
+  }
+}
+
 .calendar-graph text.wday,
 .calendar-graph text.month {
   font-size: 10px;
@@ -99,6 +111,74 @@
   width: 100%;
   box-sizing: border-box;
   height: 26px;
+}
+
+@media screen and (max-width: 740px) {
+  .contrib-footer {
+    margin-bottom: 30px;
+  }
+
+  .text-muted {
+    font-size: 12px;
+  }
+
+  .contrib-number {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .contrib-footer {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contrib-footer {
+    margin-bottom: 20px;
+  }
+
+  .text-muted {
+    font-size: 10px;
+  }
+
+  .contrib-number {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .contrib-footer {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 416px) {
+  .contrib-footer {
+    margin-bottom: 10px;
+  }
+
+  .text-muted {
+    font-size: 8px;
+  }
+
+  .contrib-number {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .contrib-footer {
+    margin-bottom: 28px;
+  }
+
+  .text-muted {
+    font-size: 7px;
+  }
+
+  .contrib-number {
+    font-size: 14px;
+  }
 }
 
 .left.text-muted {
