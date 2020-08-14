@@ -892,7 +892,6 @@
 				<script>
 						const proxyUrl = `https://cors-anywhere.herokuapp.com/`;
 						const scriptURL = `https://script.google.com/macros/s/AKfycbxMTW3CBkEwD7kA5oKSCwpbhDa_tHWDH6g3DItq8d5gSDgf0MA/exec`;
-
 						const form = document.forms['submit-to-google-sheet'];
 
 						const emailField = document.getElementById('email');
@@ -915,15 +914,6 @@
 
 									submitButton.value = "Send Message";
 								})
-
-						const form = document.forms['submit-to-google-sheet']
-
-						form.addEventListener('submit', e => {
-							e.preventDefault()
-							fetch(scriptURL, { method: 'POST', mode: "no-cors", body: new FormData(form) })
-								.then(response => alert("Message Sent Successfully"))
-								.catch(error => alert(`${error}: There was an error`))
-
 						});
 				</script>
 
