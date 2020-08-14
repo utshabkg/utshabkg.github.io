@@ -846,7 +846,7 @@
 					<form class="site-form" name="submit-to-google-sheet" data-email="example@email.net">
 
 						<div class="form-group">
-							<input id="name" name="name" placeholder="Your Full Name" class="form-control px-3 py-4" />
+							<input id="name" name="name" placeholder="Your Full Name" class="form-control px-3 py-4" required/>
 						</div>
 
 						<div class="form-group">
@@ -865,7 +865,7 @@
 
 						<div class="form-group">
 							<textarea id="message" name="message" rows="10" class="form-control px-3 py-4"
-								placeholder="Tell us what's on your mind..."></textarea>
+								placeholder="Tell us what's on your mind..." required></textarea>
 						</div>
 
 						<!--<div class="form-group">
@@ -881,7 +881,7 @@
 							<textarea class="form-control px-3 py-4"cols="30" rows="10" placeholder="Write a Message"></textarea>
 						</div>-->
 						<div class="form-group">
-							<input type="submit" class="btn btn-primary  px-4 py-3" value="Send Message">
+							<input type="submit" id="submit-btn" class="btn btn-primary  px-4 py-3" value="Send Message">
 							<input type="reset" class="btn btn-danger  px-4 py-3" value="Reset">
 						</div>
 
@@ -892,13 +892,6 @@
 				<script>
 						const proxyUrl = `https://cors-anywhere.herokuapp.com/`;
 						const scriptURL = `https://script.google.com/macros/s/AKfycbxMTW3CBkEwD7kA5oKSCwpbhDa_tHWDH6g3DItq8d5gSDgf0MA/exec`;
-						const form = document.forms['submit-to-google-sheet']
-
-						form.addEventListener('submit', e => {
-							e.preventDefault()
-							fetch(scriptURL, { method: 'POST', mode: "no-cors", body: new FormData(form) })
-								.then(response => alert("Message Sent Successfully"))
-								.catch(error => alert(`${error}: There was an error`))
 						});
 				</script>
 
