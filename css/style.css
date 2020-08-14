@@ -844,7 +844,8 @@ a:active {
   padding: 15px 0px 0px 25px;
   margin-bottom: 40px;
 }
-.logo img {
+.logo img,
+.logo svg {
   margin-right: 10px;
 }
 
@@ -1139,7 +1140,8 @@ body2 {
 }
 
 @media screen and (max-width: 500px) {
-  .logo img {
+  .logo img,
+  .logo svg {
     margin-bottom: 20px;
   }
 }
@@ -1228,7 +1230,8 @@ body2 {
     height: 455px;
   }
 
-  .logo img {
+  .logo img,
+  .logo svg {
     height: 21px !important;
     width: 21px !important;
     margin-bottom: 13px;
@@ -1263,3 +1266,8 @@ body2 {
     height: 500px;
   }
 }
+
+/* icons */
+/* .iconify{
+background: url('https://api.iconify.design/logos-tensorflow.svg') no-repeat center center / contain;
+} */
