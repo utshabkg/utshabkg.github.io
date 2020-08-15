@@ -237,9 +237,3 @@ h2.f4.text-normal.mb-3 {
   border: 5px solid transparent;
   border-top-color: rgba(0, 0, 0, 0.85);
 }
-
-@media screen and (max-width: 330px) {
-  .text-muted {
-    font-size: 6px;
-  }
-}
