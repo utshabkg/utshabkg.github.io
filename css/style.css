@@ -1267,6 +1267,26 @@ body2 {
   }
 }
 
+@media screen and (max-width: 330px) {
+  #be-2 {
+    height: 520px;
+  }
+  #be-3 {
+    height: 500px;
+  }
+
+  .testimonial-section .quote p {
+    font-size: 12px;
+  }
+
+  .testimonial .name {
+    font-size: 15px;
+  }
+
+  .testimonial .designation {
+    font-size: 13px;
+  }
+}
 /* icons */
 /* .iconify{
 background: url('https://api.iconify.design/logos-tensorflow.svg') no-repeat center center / contain;
