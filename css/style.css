@@ -8,11 +8,11 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.same-org{
+.same-org {
   display: flex;
 }
 
-.dividor{
+.dividor {
   width: 50%;
 }
 
@@ -605,7 +605,7 @@ a:active {
 .coding h4 {
   color: #fe6845;
 }
-.django h4 {
+.web h4 {
   color: #d3de32;
 }
 
@@ -1359,12 +1359,10 @@ body2 {
   }
 }
 
-
-
 .column {
   float: left;
   width: 33.33%;
-  padding: 10px 10px 40px 10px ;
+  padding: 10px 10px 40px 10px;
 }
 
 /* Clear floats after image containers */
