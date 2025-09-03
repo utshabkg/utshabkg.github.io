@@ -324,6 +324,19 @@
     }
   };
 
+  // Scroll Progress Indicator
+  var scrollProgress = function() {
+    const progressBar = document.getElementById('scrollProgress');
+    if (progressBar) {
+      window.addEventListener('scroll', function() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        progressBar.style.width = progress + '%';
+      });
+    }
+  };
+
   $(function () {
     OnePageNav();
     offCanvasNav();
@@ -333,6 +346,7 @@
     smoothScroll();
     portfolioMasonry();
     initGitHubWidget();
+    scrollProgress();
   });
 })();
 

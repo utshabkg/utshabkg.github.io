@@ -1,6 +1,8 @@
-.gh-widget-
-    
-/* Main container */
+/* =================================================================
+   GITHUB CONTRIBUTION WIDGET STYLES
+   ================================================================= */
+
+/* Main Widget Container */
 .gh-widget-wrapper {
   max-width: 1000px;
   margin: 0 auto;
@@ -12,7 +14,9 @@
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
   font-family: "Roboto", sans-serif;
   color: #fff;
-}/* Header styling */
+}
+
+/* Header Styling */
 .gh-widget-header {
   display: flex;
   align-items: center;
@@ -226,12 +230,53 @@
 
 /* Responsiveness */
 @media screen and (max-width: 768px) {
+  .gh-widget-wrapper {
+    margin: 0 15px;
+    padding: 20px;
+  }
+  
   .gh-widget-stats-container {
     flex-direction: column;
   }
 
   .gh-widget-stat-card {
     margin-bottom: 15px;
+  }
+  
+  .gh-widget-header h2 {
+    font-size: 1.3rem;
+  }
+  
+  .gh-widget-stat-value {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gh-widget-wrapper {
+    margin: 0 10px;
+    padding: 15px;
+  }
+  
+  .gh-widget-calendar-container {
+    padding: 15px;
+  }
+  
+  .gh-widget-user-avatar {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .gh-widget-user-name {
+    font-size: 1rem;
+  }
+  
+  .gh-widget-stat-value {
+    font-size: 1.8rem;
+  }
+  
+  .gh-widget-stat-card {
+    padding: 15px;
   }
 }
 

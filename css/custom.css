@@ -1,0 +1,234 @@
+/* =================================================================
+   CUSTOM STYLES AND ENHANCEMENTS
+   ================================================================= */
+
+/* Section Title Styling */
+.section-heading h2 {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.section-heading h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #bac964, #b2c251);
+  border-radius: 2px;
+}
+
+/* Portfolio Filters Enhancement */
+.filters ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+.filters ul li {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.filters ul li:hover,
+.filters ul li.active {
+  background: rgba(186, 201, 100, 0.2);
+  border-color: #bac964;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* Portfolio Items Enhancement */
+.single-portfolio {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.single-portfolio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.single-portfolio .thumb {
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px 8px 0 0;
+}
+
+.single-portfolio .p-inner {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 0 0 8px 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.single-portfolio .p-inner h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.single-portfolio .cat {
+  color: #bac964;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+/* Resume Items Enhancement */
+.resume-item .date {
+  color: #bac964;
+  font-weight: 400;
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.resume-item .school {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.resume-item h3 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 15px;
+  line-height: 1.4;
+}
+
+/* Link Styling */
+a {
+  color: #bac964;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #b2c251;
+  text-decoration: none;
+}
+
+/* Button Styling */
+.btn-primary {
+  background: linear-gradient(90deg, #bac964, #b2c251);
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #b2c251, #bac964);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(186, 201, 100, 0.3);
+}
+
+/* Loading Animation */
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  border-top-color: #bac964;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 9999;
+}
+
+.scroll-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #bac964, #b2c251);
+  width: 0%;
+  transition: width 0.1s ease;
+}
+
+/* Testimonial Enhancement */
+.testimonial-section {
+  padding: 40px 0;
+}
+
+/* Footer Enhancement */
+.site-footer {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 40px 0;
+  margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Contact Form Enhancement */
+.form-control {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 5px;
+  padding: 12px 15px;
+}
+
+.form-control:focus {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: #bac964;
+  box-shadow: 0 0 0 0.2rem rgba(186, 201, 100, 0.25);
+  color: #fff;
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection Styling */
+::selection {
+  background: rgba(186, 201, 100, 0.3);
+  color: #fff;
+}
+
+::-moz-selection {
+  background: rgba(186, 201, 100, 0.3);
+  color: #fff;
+}
+
+/* Focus Styles for Accessibility */
+.btn:focus,
+.nav-link:focus,
+.form-control:focus {
+  outline: 2px solid #bac964;
+  outline-offset: 2px;
+}
+
+/* Print Specific Styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .print-break {
+    page-break-before: always;
+  }
+}

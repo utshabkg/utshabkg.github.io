@@ -1,9 +1,15 @@
+/* =================================================================
+   SKILLS SECTION STYLES
+   ================================================================= */
+
+/* Main Container */
 .skills-container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
 }
 
+/* Skills Grid Layout */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
@@ -12,6 +18,7 @@
   gap: 20px;
 }
 
+/* Individual Skill Category */
 .skill-category {
   display: flex;
   flex-wrap: wrap;
@@ -23,11 +30,20 @@
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   min-height: 60px;
+  transition: all 0.3s ease;
 }
 
+.skill-category:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Skill Icons */
 .skill-category span,
 .skill-category img {
   transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
 }
 
 .skill-category span:hover,
@@ -36,6 +52,11 @@
   filter: brightness(1.2);
 }
 
+/* =================================================================
+   RESPONSIVE BREAKPOINTS
+   ================================================================= */
+
+/* Tablet Styles */
 @media (max-width: 768px) {
   .skills-container {
     padding: 15px;
@@ -48,6 +69,7 @@
   .skill-category {
     gap: 12px;
     padding: 10px 15px;
+    min-height: 50px;
   }
   
   .skill-category span,
@@ -57,7 +79,12 @@
   }
 }
 
+/* Mobile Styles */
 @media (max-width: 480px) {
+  .skills-container {
+    padding: 10px;
+  }
+  
   .skills-grid {
     gap: 10px;
   }
@@ -65,11 +92,26 @@
   .skill-category {
     gap: 8px;
     padding: 8px 12px;
+    min-height: 45px;
   }
   
   .skill-category span,
   .skill-category img {
     width: 24px !important;
     height: 24px !important;
+  }
+}
+
+/* Extra Small Screens */
+@media (max-width: 320px) {
+  .skill-category {
+    gap: 6px;
+    padding: 6px 10px;
+  }
+  
+  .skill-category span,
+  .skill-category img {
+    width: 20px !important;
+    height: 20px !important;
   }
 }
