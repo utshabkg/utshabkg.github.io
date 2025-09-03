@@ -10,7 +10,7 @@
 }
 
 .section-heading h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -10px;
   left: 50%;
@@ -88,7 +88,7 @@
 
 /* Add icons or text overlays for different categories */
 .single-portfolio .thumb::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -206,7 +206,7 @@
   text-transform: uppercase;
   color: #0f2e0f;
   background: linear-gradient(90deg, #39d353, #26a641);
-  border: 1px solid rgba(0,0,0,0.25);
+  border: 1px solid rgba(0, 0, 0, 0.25);
   border-radius: 999px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
@@ -216,7 +216,7 @@
   .single-portfolio .thumb {
     height: 150px;
   }
-  
+
   .single-portfolio .thumb::before {
     font-size: 3rem;
   }
@@ -230,7 +230,7 @@
   .single-portfolio .thumb {
     height: 120px;
   }
-  
+
   .single-portfolio .thumb::before {
     font-size: 2.5rem;
   }
@@ -249,15 +249,20 @@
 }
 
 .resume-item .school {
-  color: rgba(255, 255, 255, 0.8);
+  color: #6ebfb5;
   font-weight: 400;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 8px;
   display: block;
+}
+.resume-item .school:hover {
+  color: #bac964;
 }
 
 .resume-item h3 {
   color: #fff;
   font-weight: 400;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 15px;
   line-height: 1.4;
 }
@@ -302,7 +307,9 @@ a:hover {
 }
 
 @keyframes spin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Scroll Indicator */
@@ -385,7 +392,7 @@ html {
   .no-print {
     display: none !important;
   }
-  
+
   .print-break {
     page-break-before: always;
   }

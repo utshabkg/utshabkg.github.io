@@ -8,7 +8,11 @@
   margin: 0 auto;
   padding: 30px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -244,7 +248,7 @@
     margin: 0 15px;
     padding: 20px;
   }
-  
+
   .gh-widget-stats-container {
     flex-direction: column;
   }
@@ -252,11 +256,11 @@
   .gh-widget-stat-card {
     margin-bottom: 15px;
   }
-  
+
   .gh-widget-header h2 {
     font-size: 1.3rem;
   }
-  
+
   .gh-widget-stat-value {
     font-size: 2rem;
   }
@@ -267,24 +271,24 @@
     margin: 0 10px;
     padding: 15px;
   }
-  
+
   .gh-widget-calendar-container {
     padding: 15px;
   }
-  
+
   .gh-widget-user-avatar {
     width: 35px;
     height: 35px;
   }
-  
+
   .gh-widget-user-name {
     font-size: 1rem;
   }
-  
+
   .gh-widget-stat-value {
     font-size: 1.8rem;
   }
-  
+
   .gh-widget-stat-card {
     padding: 15px;
   }
