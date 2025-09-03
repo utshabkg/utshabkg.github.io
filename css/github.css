@@ -179,6 +179,16 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* Make the whole user info row clickable without default link styling */
+.gh-widget-user-info {
+  color: inherit;
+  text-decoration: none;
+}
+.gh-widget-user-info:hover {
+  text-decoration: none;
+  filter: brightness(1.03);
+}
+
 .gh-widget-user-avatar {
   width: 45px;
   height: 45px;
