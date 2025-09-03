@@ -1,245 +1,234 @@
-.calendar {
-  /* font-family: "Lato", sans-serif; */
-  /* border: 1px solid #dddddd; */
-  /* border-radius: 3px; */
-  min-height: 243px;
-  text-align: center;
+.gh-widget-
+    
+    /* Main container */
+    .gh-widget-wrapper {
+  max-width: 1000px;
   margin: 0 auto;
-  border: none !important;
-  padding: 16px 25px;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #161b22;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif;
+  color: #e6edf3;
 }
 
-@media screen and (max-width: 615px) {
-  .calendar {
-    padding: 8px 12px;
-  }
+/* Header styling */
+.gh-widget-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
 }
 
-@media screen and (min-width: 100px) and (max-width: 614px) {
-  .calendar {
-    padding: 8px 0;
-  }
+.gh-widget-header-icon {
+  margin-right: 12px;
+  color: #58a6ff;
 }
 
-.calendar-graph text.wday,
-.calendar-graph text.month {
-  font-size: 10px;
-  fill: #aaa;
+.gh-widget-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+  color: #e6edf3;
 }
 
-.contrib-legend {
-  text-align: right;
-  padding: 0 14px 10px 0;
-  display: inline-block;
-  float: right;
+/* Calendar container */
+.gh-widget-calendar-container {
+  background-color: #0d1117;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+  border: 1px solid #30363d;
 }
 
-.contrib-legend .legend {
-  display: inline-block;
-  list-style: none;
-  margin: 0 5px;
+/* Stats cards container */
+.gh-widget-stats-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+/* Individual stat card */
+.gh-widget-stat-card {
+  flex: 1;
+  background: linear-gradient(145deg, #1a2230, #161b22);
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 20px;
   position: relative;
-  bottom: -1px;
-  padding: 0;
-}
-
-.contrib-legend .legend li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-}
-
-.text-small {
-  font-size: 12px;
-  color: #767676;
-}
-
-.calendar-graph {
-  padding: 5px 0 0;
   text-align: center;
+  overflow: hidden;
 }
 
-.contrib-column {
-  padding: 15px 0;
-  text-align: center;
-  /* border-left: 1px solid #ddd; */
-  /* border-top: 1px solid #ddd; */
+/* Color accent on top of cards */
+.gh-widget-stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+
+.gh-widget-yearly-card::before {
+  background: linear-gradient(90deg, #39d353, #26a641);
+}
+
+.gh-widget-longest-card::before {
+  background: linear-gradient(90deg, #58a6ff, #1f6feb);
+}
+
+.gh-widget-current-card::before {
+  background: linear-gradient(90deg, #bf4acc, #8957e5);
+}
+
+.gh-widget-stat-card h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #8b949e;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.gh-widget-stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #e6edf3;
+  margin-bottom: 5px;
+}
+
+.gh-widget-stat-desc {
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+/* GitHub Calendar overrides */
+.gh-widget-wrapper .calendar {
+  width: 100%;
+  border: none !important;
+}
+
+.gh-widget-wrapper .calendar .js-calendar-graph-svg {
+  max-width: 100% !important;
+}
+
+/* Calendar text colors */
+.gh-widget-wrapper .calendar text.month,
+.gh-widget-wrapper .calendar text.wday {
+  fill: #8b949e;
+  font-size: 10px;
+}
+
+/* Hide default GitHub calendar stats */
+.gh-widget-wrapper .contrib-column,
+.gh-widget-wrapper .contrib-footer {
+  display: none !important;
+}
+
+/* Legend styling */
+.gh-widget-wrapper .contrib-legend {
+  text-align: right;
+  padding: 5px 0;
+  color: #8b949e;
+}
+
+/* Loading state */
+.gh-widget-loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.gh-widget-loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #39d353;
+  animation: gh-widget-spin 1s ease-in-out infinite;
+  margin-bottom: 20px;
+}
+
+@keyframes gh-widget-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.gh-widget-loading-text {
+  color: #8b949e;
   font-size: 14px;
 }
 
-.contrib-column-first {
-  border-left: 0;
+/* User info section */
+.gh-widget-user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #30363d;
 }
 
-.table-column {
-  display: table-cell;
-  width: 1%;
-  padding-right: 10px;
-  padding-left: 10px;
-  vertical-align: top;
+.gh-widget-user-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: #30363d;
+  overflow: hidden;
 }
 
-.contrib-number {
-  font-weight: 300;
-  line-height: 1.3em;
-  font-size: 24px;
-  display: block;
-  /* color: #333; */
-}
-
-.calendar img.spinner {
-  width: 70px;
-  margin-top: 50px;
-  min-height: 70px;
-}
-
-.monospace {
-  text-align: center;
-  color: #000;
-  font-family: monospace;
-}
-
-.monospace a {
-  color: #1d75ab;
-  text-decoration: none;
-}
-
-.contrib-footer {
-  font-size: 13px;
-  padding: 0 10px 12px;
-  text-align: left;
+.gh-widget-user-avatar img {
   width: 100%;
-  box-sizing: border-box;
-  height: 26px;
+  height: 100%;
+  object-fit: cover;
 }
 
-@media screen and (max-width: 740px) {
-  .contrib-footer {
-    margin-bottom: 30px;
-  }
-
-  .text-muted {
-    font-size: 12px;
-  }
-
-  .contrib-number {
-    font-size: 20px;
-  }
+.gh-widget-user-details {
+  flex: 1;
 }
 
-@media screen and (max-width: 570px) {
-  .contrib-footer {
-    font-size: 11px;
-  }
+.gh-widget-user-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
 }
 
-@media screen and (max-width: 480px) {
-  .contrib-footer {
-    margin-bottom: 20px;
-  }
-
-  .text-muted {
-    font-size: 10px;
-  }
-
-  .contrib-number {
-    font-size: 18px;
-  }
-}
-
-@media screen and (max-width: 440px) {
-  .contrib-footer {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 416px) {
-  .contrib-footer {
-    margin-bottom: 10px;
-  }
-
-  .text-muted {
-    font-size: 8px;
-  }
-
-  .contrib-number {
-    font-size: 16px;
-  }
-}
-
-@media screen and (max-width: 386px) {
-  .contrib-footer {
-    margin-bottom: 28px;
-  }
-
-  .text-muted {
-    font-size: 7px;
-  }
-
-  .contrib-number {
-    font-size: 14px;
-  }
-}
-
-.left.text-muted {
-  float: left;
-  margin-left: 9px;
-  color: #767676;
-}
-.left.text-muted a {
-  color: #4078c0;
+.gh-widget-user-name a {
+  color: #e6edf3;
   text-decoration: none;
 }
-.left.text-muted a:hover,
-.monospace a:hover {
+
+.gh-widget-user-name a:hover {
   text-decoration: underline;
+  color: #58a6ff;
 }
 
-h2.f4.text-normal.mb-3 {
-  display: none;
+.gh-widget-user-handle {
+  color: #8b949e;
+  font-size: 0.9rem;
 }
 
-.float-left.text-gray {
-  float: left;
-}
-#user-activity-overview {
-  display: none;
+.gh-widget-github-icon {
+  margin-left: 8px;
+  color: #8b949e;
 }
 
-.day-tooltip {
-  white-space: nowrap;
-  position: absolute;
-  z-index: 99999;
-  padding: 10px;
-  font-size: 12px;
-  color: #959da5;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.85);
-  border-radius: 3px;
-  display: none;
-  pointer-events: none;
-}
-.day-tooltip strong {
-  color: #dfe2e5;
-}
-.day-tooltip.is-visible {
-  display: block;
-}
-.day-tooltip:after {
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  width: 5px;
-  height: 5px;
-  box-sizing: border-box;
-  margin: 0 0 0 -5px;
-  content: " ";
-  border: 5px solid transparent;
-  border-top-color: rgba(0, 0, 0, 0.85);
-}
+/* Responsiveness */
+@media screen and (max-width: 768px) {
+  .gh-widget-stats-container {
+    flex-direction: column;
+  }
 
-@media screen and (max-width: 330px) {
-  .text-muted {
-    font-size: 6px;
+  .gh-widget-stat-card {
+    margin-bottom: 15px;
   }
 }
