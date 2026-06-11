@@ -2,731 +2,436 @@
 <html lang="en">
 
 <head>
-	<title>Utshab Kumar Ghosh</title>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/flexslider.css">
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
+	<title>Certificate Gallery — Utshab Kumar Ghosh</title>
+	<meta name="description" content="Professional certificates of Utshab Kumar Ghosh — deep learning, data science and machine learning credentials from Coursera, deeplearning.ai, IBM, DataCamp and Kaggle.">
+	<link rel="canonical" href="https://utshabkg.github.io/gallery.html">
+	<meta name="robots" content="index,follow">
 
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+	<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+	<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0f1115">
+	<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fafaf7">
+
+	<!-- set the theme before first paint to avoid a flash of the wrong colors -->
+	<script>
+		(function () {
+			try {
+				var t = localStorage.getItem("theme") ||
+					(window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+				document.documentElement.dataset.theme = t;
+			} catch (e) {
+				document.documentElement.dataset.theme = "dark";
+			}
+		})();
+	</script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 
-<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
 
-	<section class="site-section" id="section-portfolio">
-		<div class="container">
-			<div class="row">
-				<div class="section-heading text-center col-md-12">
-					<h2>Utshab's <strong>Certificate Gallery</strong></h2>
-				</div>
-			</div>
-			<p>
-				<a href='index.html' class="btn btn-outline-primary px-3 py-2 btn-sm"><b>
-						<-- </b>Return to Homepage</a>
-				<a href='gallery.html' id="btn-social" class="btn btn-info px-3 py-1 btn-sm">Reload for any Issue</a>
-			</p>
-			<div class="filters">
-				<ul>
-					<li data-filter=".Specialization">Specialization</li>
-					<li data-filter=".IBM">IBM</li>
-					<li data-filter=".deeplearning">deeplearning.ai</li>
-					<li data-filter=".Coursera">Coursera</li>
-					<li data-filter=".Datacamp">Datacamp</li>
-					<li data-filter=".Projects">Projects & Trainings</li>
-					<li class="active" data-filter="*">All</li>
+	<!-- ============================ HEADER / NAV ============================ -->
+	<header class="site-header">
+		<div class="container nav-inner">
+			<a class="brand" href="index.html">Utshab Kumar Ghosh</a>
+
+			<nav aria-label="Main">
+				<ul class="nav-links" id="nav-links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="index.html#research">Research</a></li>
+					<li><a href="index.html#projects">Projects</a></li>
+					<li><a href="index.html#accomplishments">Accomplishments</a></li>
+					<li><a href="index.html#contact">Contact</a></li>
 				</ul>
-			</div>
+			</nav>
 
-			<div class="filters-content">
-				<div class="row grid">
-					<div class="row">
-						<div class="column all Specialization deeplearning Coursera">
-							<p class="mb-4">
-								<a href="https://coursera.org/share/0e52153268603c4aa6fa8d5a3b06f741"
-									target="_blank">Deep Learning Specialization</a>
-							</p>
-							<a href="https://coursera.org/share/0e52153268603c4aa6fa8d5a3b06f741" target="_blank">
-								<img src="images/deep.JPG" style="width:100%">
-							</a>
-						</div>
-
-						<div class="column all Specialization Datacamp">
-                            <p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/track/f3c7aa5a5c1321375a3c6e51cd169032098ef180"
-									target="_blank">Data Scientist Career Track with Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/track/f3c7aa5a5c1321375a3c6e51cd169032098ef180"
-								target="_blank">
-								<img src="images/dc0.JPG" style="width:360px; height:280px;">
-							</a>
-                        </div>
-
-						<div class="column all Coursera deeplearning">
-							<p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/records/ERJHV9PGQCJT"
-									target="_blank">Artificial Intelligence for Medical Diagnosis</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/records/ERJHV9PGQCJT"
-								target="_blank">
-								<img src="images/medi.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="column all deeplearning Coursera">
-							<p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/records/GZAC2VMRH48E"
-									target="_blank">Convolutional Neural Networks</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/records/GZAC2VMRH48E"
-								target="_blank">
-								<img src="images/deep4.JPG" style="width:100%">
-							</a>
-						</div>
-
-						<div class="column all deeplearning Coursera">
-							<p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/verify/MH4B3C3WFLAT"
-									target="_blank">HP tuning, Regularization & Optimization</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/verify/MH4B3C3WFLAT"
-								target="_blank">
-								<img src="images/deep2.JPG" style="width:100%">
-							</a>
-						</div>
-						
-						<div class="column all deeplearning Coursera">
-							<p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/records/N3LWGV3EG2P7"
-									target="_blank">Structuring Machine Learning Projects</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/records/N3LWGV3EG2P7"
-								target="_blank">
-								<img src="images/deep3.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-					
-                    <div class="row">
-                        <div class="column all deeplearning Coursera">
-							<p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/records/MH4B3C3WFLAT"
-									target="_blank">Neural Networks and Deep Learning</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/records/MH4B3C3WFLAT"
-								target="_blank">
-								<img src="images/deep1.JPG" style="width:100%">
-							</a>
-						</div>
-
-                        <div class="column all deeplearning Coursera">
-							<p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/records/L8ZK8KPYMMV4"
-									target="_blank">Sequence Models</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/records/L8ZK8KPYMMV4"
-								target="_blank">
-								<img src="images/deep5.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-						
-					<div class="row">
-						<div class="column all IBM Coursera">
-                            <p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/certificate/HW54AWK3HHYC"
-									target="_blank">Python for Data Science, AI & Development</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/certificate/HW54AWK3HHYC"
-								target="_blank">
-								<img src="images/IBM1.JPG" style="width:100%">
-							</a>
-                        </div>
-						
-						<div class="column all IBM Coursera">
-							<p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/certificate/DE9Z5VAH8Z36"
-									target="_blank">Data Analysis with Python</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/certificate/DE9Z5VAH8Z36"
-								target="_blank">
-								<img src="images/IBM3.JPG" style="width:100%">
-							</a>
-						</div>
-
-						<div class="column all IBM Coursera">
-							<p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/certificate/LSXA593A92WV"
-									target="_blank">Python Project for Data Science</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/certificate/LSXA593A92WV"
-								target="_blank">
-								<img src="images/IBM2.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="column all IBM Coursera">
-                            <p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/verify/HKN2CXN359LJ"
-									target="_blank">Data Visualization with Python</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/verify/HKN2CXN359LJ"
-								target="_blank">
-								<img src="images/IBM4.JPG" style="width:100%">
-							</a>
-                        </div>
-						
-						<div class="column all Projects">
-							<p class="mb-4">
-								<a href="https://www.kaggle.com/learn/certification/utshabkumarghosh/intermediate-machine-learning"
-									target="_blank">Intermediate Machine Learning</a>
-							</p>
-							<a href="https://www.kaggle.com/learn/certification/utshabkumarghosh/intermediate-machine-learning"
-								target="_blank">
-								<img src="images/Kaggle Intermediate_ML.png" style="width:100%">
-							</a>
-						</div>
-
-						<div class="column all Projects">
-							<p class="mb-4">
-								<a href=""
-									target="_blank">AI Master Class</a>
-							</p>
-							<a href=""
-								target="_blank">
-								<img src="images/pantechsolutions_AI.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-
-
-				<div class="row">
-					<div class="column all Projects">
-						<p class="mb-4">
-							<a href="https://www.coursera.org/account/accomplishments/records/P8AUGU6NR9SQ"
-								target="_blank">Image Denoising Using AutoEncoders</a>
-						</p>
-						<a href="https://www.coursera.org/account/accomplishments/records/P8AUGU6NR9SQ"
-							target="_blank">
-							<img src="images/autoenc.JPG" style="width:100%">
-						</a>
-					</div>
-
-					<div class="column all Projects">
-						<p class="mb-4">
-							<a href="https://www.coursera.org/account/accomplishments/records/AQ5EUFV2S4QT"
-								target="_blank">Image Classification with TensorFlow</a>
-						</p>
-						<a href="https://www.coursera.org/account/accomplishments/records/AQ5EUFV2S4QT"
-							target="_blank">
-							<img src="images/tf.JPG" style="width:100%">
-						</a>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="column all Datacamp">
-						<p class="mb-4">
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/b09c45e8dac3db348f56565ed2cdcf2c86af3959"
-								target="_blank">Case Study: School Budgeting with ML in Python</a>
-						</p>
-						<a href="https://www.datacamp.com/statement-of-accomplishment/course/b09c45e8dac3db348f56565ed2cdcf2c86af3959"
-							target="_blank">
-							<img src="images/dc22.JPG" style="width:100%">
-						</a>
-					</div>
-
-					<div class="column all Datacamp">
-						<p class="mb-4">
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/c21124fa8928dc29156fc9a0e4463e806ace11a0"
-								target="_blank">Cluster Analysis in Python</a>
-						</p>
-						<a href="https://www.datacamp.com/statement-of-accomplishment/course/c21124fa8928dc29156fc9a0e4463e806ace11a0"
-							target="_blank">
-							<img src="images/dc23.JPG" style="width:100%">
-						</a>
-					</div>
-				</div>
-
-					<div class="row">
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/562158598cd616943bf00d8b0c9f56dfefd3fb67"
-									target="_blank">Supervised Learning with scikit-learn</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/562158598cd616943bf00d8b0c9f56dfefd3fb67"
-								target="_blank">
-								<img src="images/dc19.JPG" style="width:100%">
-							</a>
-						</div>
-
-						<div class="column all Datacamp">
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/8416f55f0a3d66e937107943eb3dd11b5a06e9eb"
-									target="_blank">Unsupervised Learning in Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/8416f55f0a3d66e937107943eb3dd11b5a06e9eb"
-								target="_blank">
-								<img src="images/dc20.JPG" style="width:100%">
-							</a>
-						</div>
-
-						<div class="column all Datacamp">
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/f88849961ea95d796c8e2b7f60401b5e02a97bf9"
-									target="_blank">Machine Learning with Tree-Based Models in Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/f88849961ea95d796c8e2b7f60401b5e02a97bf9"
-								target="_blank">
-								<img src="images/dc21.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="column all Datacamp">
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/624253528128d6ab8c1169978d14a5e9dbecee71"
-									target="_blank">Analyzing Police Activity with pandas</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/624253528128d6ab8c1169978d14a5e9dbecee71"
-								target="_blank">
-								<img src="images/dc16.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/32e150c5c59406fe8c05c7014992940e967fdd6b"
-									target="_blank">Statistical Thinking in Python (Part 1)</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/32e150c5c59406fe8c05c7014992940e967fdd6b"
-								target="_blank">
-								<img src="images/dc17.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/fcf879a3e586de4f69e078d904c4761e9bc69a96"
-									target="_blank">Statistical Thinking in Python (Part 2)</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/fcf879a3e586de4f69e078d904c4761e9bc69a96"
-								target="_blank">
-								<img src="images/dc18.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/5895cb5fd3aea518e551c8b0b5d29e35af2e2fbe"
-									target="_blank">Working with Dates and Times in Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/5895cb5fd3aea518e551c8b0b5d29e35af2e2fbe"
-								target="_blank">
-								<img src="images/dc13.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/616f5e7b353076356cc780a95a724ace87195456"
-									target="_blank">Writing Functions in Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/616f5e7b353076356cc780a95a724ace87195456"
-								target="_blank">
-								<img src="images/dc14.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/a19a8b588ead7535a5a3259d34dacc3b85bbbf8c"
-									target="_blank">Exploratory Data Analysis in Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/a19a8b588ead7535a5a3259d34dacc3b85bbbf8c"
-								target="_blank">
-								<img src="images/dc15.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/1f1cfbaea18ce4f725d5d6d3cd808cb3ab721cbc"
-									target="_blank">Introduction to Importing Data in Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/1f1cfbaea18ce4f725d5d6d3cd808cb3ab721cbc"
-								target="_blank">
-								<img src="images/dc10.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/6c57818a698332751ea2a02abe206fd659d7ff05"
-									target="_blank">Intermediate Importing Data in Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/6c57818a698332751ea2a02abe206fd659d7ff05"
-								target="_blank">
-								<img src="images/dc11.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/dd8e5b7278eec8dc888aa580a94f34a6a7335e6c"
-									target="_blank">Cleaning Data in Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/dd8e5b7278eec8dc888aa580a94f34a6a7335e6c"
-								target="_blank">
-								<img src="images/dc12.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-					<div class="row">
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/c44aff2f6242c13680720607520efd8c9771bc48"
-									target="_blank">Python Data Science Toolbox (Part 1)</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/c44aff2f6242c13680720607520efd8c9771bc48"
-								target="_blank">
-								<img src="images/dc7.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/fc56f21e9d59ea62fa6064d27b9b72b7d2488fab"
-									target="_blank">Python Data Science Toolbox (Part 2)</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/fc56f21e9d59ea62fa6064d27b9b72b7d2488fab"
-								target="_blank">
-								<img src="images/dc8.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/1f1bddffdc852a698861632fd9b9d26bc76e2cb3"
-									target="_blank">Intermediate Data Visualization with Seaborn</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/1f1bddffdc852a698861632fd9b9d26bc76e2cb3"
-								target="_blank">
-								<img src="images/dc9.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/acb11256ab91800cff489e5add9a8750570cdac3"
-									target="_blank">Joining Data with Pandas</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/acb11256ab91800cff489e5add9a8750570cdac3"
-								target="_blank">
-								<img src="images/dc4.2.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/11ef40bc52726606cd33ed0a13b293e9cb16cc6c"
-									target="_blank">Introduction to Data Visualization with Matplotlib</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/11ef40bc52726606cd33ed0a13b293e9cb16cc6c"
-								target="_blank">
-								<img src="images/dc5.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/8da257d76f5ea4da21ef0be17736ac058e196e4a"
-									target="_blank">Introduction to Data Visualization with Seaborn</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/8da257d76f5ea4da21ef0be17736ac058e196e4a"
-								target="_blank">
-								<img src="images/dc6.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-
-					<div class="row">
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/acb11256ab91800cff489e5add9a8750570cdac3"
-									target="_blank">Introduction to Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/acb11256ab91800cff489e5add9a8750570cdac3"
-								target="_blank">
-								<img src="images/dc1.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/11ef40bc52726606cd33ed0a13b293e9cb16cc6c"
-									target="_blank">Intermediate Python</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/11ef40bc52726606cd33ed0a13b293e9cb16cc6c"
-								target="_blank">
-								<img src="images/dc2.JPG" style="width:100%">
-							</a>
-						</div>
-						<div class="column all Datacamp">
-
-							<p class="mb-4">
-								<a href="https://www.datacamp.com/statement-of-accomplishment/course/0cb3da7cdd9114283f27861224c6be5d73e54bc0"
-									target="_blank">Data Manipulation with pandas</a>
-							</p>
-							<a href="https://www.datacamp.com/statement-of-accomplishment/course/0cb3da7cdd9114283f27861224c6be5d73e54bc0"
-								target="_blank">
-								<img src="images/dc3.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-
-					<div class="row">
-
-						<div class="column all IBM Specialization">
-							<p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/specialization/A3J546KPDAWV"
-									target="_blank">Applied Data Science Specialization</a>
-							</p>
-							<a href="https://www.coursera.org/account/accomplishments/specialization/A3J546KPDAWV"
-								target="_blank">
-								<img src="images/applied_DS.JPG" style="width:100%">
-							</a>
-						</div>
-
-						<div class="column all IBM">
-							<p class="mb-4">
-								<a href="https://www.coursera.org/account/accomplishments/verify/CWVS26ZFMTVV"
-									target="_blank">Applied Data Science Capstone</a>
-							</p>
-							<a href="https://https://www.coursera.org/account/accomplishments/verify/CWVS26ZFMTVV"
-								target="_blank">
-								<img src="images/IBM5.JPG" style="width:100%">
-							</a>
-						</div>
-					</div>
-
-				</div>
+			<div class="nav-cta">
+				<a class="btn btn-primary" href="assets/pdf/cv.pdf" target="_blank" rel="noopener">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						stroke-linejoin="round" aria-hidden="true">
+						<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+						<polyline points="14 2 14 8 20 8"></polyline>
+					</svg>
+					<span>CV</span>
+				</a>
+				<button class="theme-toggle" type="button" aria-label="Switch color theme">
+					<svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+						<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+					</svg>
+					<svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+						stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+						<circle cx="12" cy="12" r="5"></circle>
+						<line x1="12" y1="1" x2="12" y2="3"></line>
+						<line x1="12" y1="21" x2="12" y2="23"></line>
+						<line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+						<line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+						<line x1="1" y1="12" x2="3" y2="12"></line>
+						<line x1="21" y1="12" x2="23" y2="12"></line>
+						<line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+						<line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+					</svg>
+				</button>
+				<button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+					aria-controls="nav-links">
+					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+						aria-hidden="true">
+						<line x1="3" y1="6" x2="21" y2="6"></line>
+						<line x1="3" y1="12" x2="21" y2="12"></line>
+						<line x1="3" y1="18" x2="21" y2="18"></line>
+					</svg>
+				</button>
 			</div>
 		</div>
-		</div>
-	</section>
-	<!-- .section -->
+		<div class="scroll-progress" aria-hidden="true"></div>
+	</header>
 
+	<main id="main">
+		<!-- ============================ GALLERY ============================
+		     To add a certificate: drop the image in assets/img/, then copy one
+		     <figure class="gallery-item"> block below and edit title/link/tags.
+		     Tags: specialization, deeplearning, ibm, coursera, datacamp, projects -->
+		<section class="section">
+			<div class="container">
+				<h1 class="section-title">Certificate Gallery</h1>
+				<p class="section-subtitle">Every certificate links to its official verification page.
+					Click an image to enlarge it.</p>
 
-
-	<link rel="stylesheet" href="style/pure.css">
-	<link rel="stylesheet" href="style/style1.css">
-	<section class="site-section" id="section-contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12 mb-5 title-mb">
-					<div class="section-heading text-center">
-						<h2>Get <strong>In Touch</strong></h2>
-					</div>
+				<div class="filter-bar" data-filter-bar=".gallery-item" role="group" aria-label="Filter certificates">
+					<button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">All</button>
+					<button class="filter-btn" type="button" data-filter="specialization" aria-pressed="false">Specializations</button>
+					<button class="filter-btn" type="button" data-filter="deeplearning" aria-pressed="false">deeplearning.ai</button>
+					<button class="filter-btn" type="button" data-filter="ibm" aria-pressed="false">IBM</button>
+					<button class="filter-btn" type="button" data-filter="coursera" aria-pressed="false">Coursera</button>
+					<button class="filter-btn" type="button" data-filter="datacamp" aria-pressed="false">DataCamp</button>
+					<button class="filter-btn" type="button" data-filter="projects" aria-pressed="false">Projects &amp; Trainings</button>
 				</div>
 
-				<div class="col-md-7 mb-5 mb-md-0">
+				<div class="gallery-grid">
+				<figure class="gallery-item" data-tags="specialization deeplearning coursera" data-title="Deep Learning Specialization">
+					<button type="button" aria-label="Enlarge: Deep Learning Specialization">
+						<img src="assets/img/deep.webp" alt="Deep Learning Specialization certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://coursera.org/share/0e52153268603c4aa6fa8d5a3b06f741" target="_blank" rel="noopener">Deep Learning Specialization</a></figcaption>
+				</figure>
 
-					<form class="site-form" name="submit-to-google-sheet" data-email="example@email.net">
+				<figure class="gallery-item" data-tags="specialization ibm coursera" data-title="Applied Data Science Specialization">
+					<button type="button" aria-label="Enlarge: Applied Data Science Specialization">
+						<img src="assets/img/applied-ds.webp" alt="Applied Data Science Specialization certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/specialization/A3J546KPDAWV" target="_blank" rel="noopener">Applied Data Science Specialization</a></figcaption>
+				</figure>
 
-						<div class="form-group">
-							<input id="name" name="name" placeholder="Your Full Name" class="form-control px-3 py-4"
-								required />
-						</div>
+				<figure class="gallery-item" data-tags="specialization datacamp" data-title="Data Scientist Career Track with Python">
+					<button type="button" aria-label="Enlarge: Data Scientist Career Track with Python">
+						<img src="assets/img/dc0.webp" alt="Data Scientist Career Track with Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/track/f3c7aa5a5c1321375a3c6e51cd169032098ef180" target="_blank" rel="noopener">Data Scientist Career Track with Python</a></figcaption>
+				</figure>
 
-						<div class="form-group">
-							<input id="email" name="email" type="email" value="" class="form-control px-3 py-4" required
-								placeholder="your@email.com" />
-							<span class="email-invalid" style="display:none">
-								Must be a valid email address</span>
-						</div>
+				<figure class="gallery-item" data-tags="deeplearning coursera" data-title="AI for Medical Diagnosis">
+					<button type="button" aria-label="Enlarge: AI for Medical Diagnosis">
+						<img src="assets/img/medi.webp" alt="AI for Medical Diagnosis certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/records/ERJHV9PGQCJT" target="_blank" rel="noopener">AI for Medical Diagnosis</a></figcaption>
+				</figure>
 
-						<div class="form-group">
-							<input id="phone" name="phone" type="number" value="" class="form-control px-3 py-4"
-								placeholder="Phone Number" />
-							<span class="email-invalid" style="display:none">
-								Must be a valid Phone Number</span>
-						</div>
+				<figure class="gallery-item" data-tags="deeplearning coursera" data-title="Neural Networks and Deep Learning">
+					<button type="button" aria-label="Enlarge: Neural Networks and Deep Learning">
+						<img src="assets/img/deep1.webp" alt="Neural Networks and Deep Learning certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/records/MH4B3C3WFLAT" target="_blank" rel="noopener">Neural Networks and Deep Learning</a></figcaption>
+				</figure>
 
-						<div class="form-group">
-							<textarea id="message" name="message" rows="10" class="form-control px-3 py-4"
-								placeholder="Tell us what's on your mind..." required></textarea>
-						</div>
+				<figure class="gallery-item" data-tags="deeplearning coursera" data-title="Hyperparameter Tuning, Regularization &amp; Optimization">
+					<button type="button" aria-label="Enlarge: Hyperparameter Tuning, Regularization &amp; Optimization">
+						<img src="assets/img/deep2.webp" alt="Hyperparameter Tuning, Regularization &amp; Optimization certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/verify/MH4B3C3WFLAT" target="_blank" rel="noopener">Hyperparameter Tuning, Regularization &amp; Optimization</a></figcaption>
+				</figure>
 
-						<!--<div class="form-group">
-							<input type="text" class="form-control px-3 py-4" placeholder="Your Name">
-						</div>
-						<div class="form-group">
-							<input type="email" class="form-control px-3 py-4" placeholder="Your Email">
-						</div>
-						<div class="form-group">
-							<input type="number" class="form-control px-3 py-4" placeholder="Your Phone">
-						</div>
-						<div class="form-group mb-5">
-							<textarea class="form-control px-3 py-4"cols="30" rows="10" placeholder="Write a Message"></textarea>
-						</div>-->
-						<div class="form-group">
-							<input type="submit" id="submit-btn" class="btn btn-success  px-3 py-2"
-								value="Send Message">
-							<input type="reset" class="btn btn-danger  px-3 py-2" value="Reset">
-						</div>
+				<figure class="gallery-item" data-tags="deeplearning coursera" data-title="Structuring Machine Learning Projects">
+					<button type="button" aria-label="Enlarge: Structuring Machine Learning Projects">
+						<img src="assets/img/deep3.webp" alt="Structuring Machine Learning Projects certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/records/N3LWGV3EG2P7" target="_blank" rel="noopener">Structuring Machine Learning Projects</a></figcaption>
+				</figure>
 
-					</form>
+				<figure class="gallery-item" data-tags="deeplearning coursera" data-title="Convolutional Neural Networks">
+					<button type="button" aria-label="Enlarge: Convolutional Neural Networks">
+						<img src="assets/img/deep4.webp" alt="Convolutional Neural Networks certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/records/GZAC2VMRH48E" target="_blank" rel="noopener">Convolutional Neural Networks</a></figcaption>
+				</figure>
 
-				</div>
+				<figure class="gallery-item" data-tags="deeplearning coursera" data-title="Sequence Models">
+					<button type="button" aria-label="Enlarge: Sequence Models">
+						<img src="assets/img/deep5.webp" alt="Sequence Models certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/records/L8ZK8KPYMMV4" target="_blank" rel="noopener">Sequence Models</a></figcaption>
+				</figure>
 
-				<script>
-					const proxyUrl = `https://cors-anywhere.herokuapp.com/`;
-					const scriptURL = `https://script.google.com/macros/s/AKfycbxMTW3CBkEwD7kA5oKSCwpbhDa_tHWDH6g3DItq8d5gSDgf0MA/exec`;
-					const form = document.forms['submit-to-google-sheet'];
+				<figure class="gallery-item" data-tags="ibm coursera" data-title="Python for Data Science, AI &amp; Development">
+					<button type="button" aria-label="Enlarge: Python for Data Science, AI &amp; Development">
+						<img src="assets/img/ibm1.webp" alt="Python for Data Science, AI &amp; Development certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/certificate/HW54AWK3HHYC" target="_blank" rel="noopener">Python for Data Science, AI &amp; Development</a></figcaption>
+				</figure>
 
-					const emailField = document.getElementById('email');
-					const nameField = document.getElementById('name');
-					const phoneField = document.getElementById('phone');
-					const messageField = document.getElementById('message');
-					const submitButton = document.getElementById('submit-btn');
+				<figure class="gallery-item" data-tags="ibm coursera" data-title="Python Project for Data Science">
+					<button type="button" aria-label="Enlarge: Python Project for Data Science">
+						<img src="assets/img/ibm2.webp" alt="Python Project for Data Science certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/certificate/LSXA593A92WV" target="_blank" rel="noopener">Python Project for Data Science</a></figcaption>
+				</figure>
 
-					form.addEventListener('submit', e => {
-						e.preventDefault();
-						submitButton.value = "Sending...";
-						fetch(scriptURL, { method: 'POST', mode: "no-cors", body: new FormData(form) })
-							.then(response => alert("Message Sent Successfully"))
-							.catch(error => alert(`${error}: There was an error`))
-							.then(e => {
-								emailField.value = "";
-								nameField.value = "";
-								phoneField.value = "";
-								messageField.value = "";
+				<figure class="gallery-item" data-tags="ibm coursera" data-title="Data Analysis with Python">
+					<button type="button" aria-label="Enlarge: Data Analysis with Python">
+						<img src="assets/img/ibm3.webp" alt="Data Analysis with Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/certificate/DE9Z5VAH8Z36" target="_blank" rel="noopener">Data Analysis with Python</a></figcaption>
+				</figure>
 
-								submitButton.value = "Send Message";
-							})
-					});
-				</script>
+				<figure class="gallery-item" data-tags="ibm coursera" data-title="Data Visualization with Python">
+					<button type="button" aria-label="Enlarge: Data Visualization with Python">
+						<img src="assets/img/ibm4.webp" alt="Data Visualization with Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/verify/HKN2CXN359LJ" target="_blank" rel="noopener">Data Visualization with Python</a></figcaption>
+				</figure>
 
-				<div class="col-md-5 pl-md-5">
-					<h3 class="mb-5">My Contact Details</h3>
-					<ul class="site-contact-details">
-						<li>
-							<span class="text-uppercase">Email</span>
-							kumarutshab@gmail.com<br>
-							1603022@student.ruet.ac.bd
-						</li>
-						<li>
-							<span class="text-uppercase">Phone</span>
-							+880 1623 642710
-						</li>
-						<li>
-							<span class="text-uppercase">Address</span>
-							Shohid Lt. Selim Hall <br>
-							RUET <br>
-							Rajshahi 6204, Bangladesh
-						</li>
-					</ul>
+				<figure class="gallery-item" data-tags="ibm coursera" data-title="Applied Data Science Capstone">
+					<button type="button" aria-label="Enlarge: Applied Data Science Capstone">
+						<img src="assets/img/ibm5.webp" alt="Applied Data Science Capstone certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/verify/CWVS26ZFMTVV" target="_blank" rel="noopener">Applied Data Science Capstone</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="projects" data-title="Intermediate Machine Learning — Kaggle">
+					<button type="button" aria-label="Enlarge: Intermediate Machine Learning — Kaggle">
+						<img src="assets/img/kaggle-intermediate-ml.webp" alt="Intermediate Machine Learning — Kaggle certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.kaggle.com/learn/certification/utshabkumarghosh/intermediate-machine-learning" target="_blank" rel="noopener">Intermediate Machine Learning — Kaggle</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="projects" data-title="AI Master Class — Pantech Solutions">
+					<button type="button" aria-label="Enlarge: AI Master Class — Pantech Solutions">
+						<img src="assets/img/pantech-ai.webp" alt="AI Master Class — Pantech Solutions certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption>AI Master Class — Pantech Solutions <span class="chip">verification link unavailable</span></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="projects coursera" data-title="Image Denoising Using AutoEncoders">
+					<button type="button" aria-label="Enlarge: Image Denoising Using AutoEncoders">
+						<img src="assets/img/autoenc.webp" alt="Image Denoising Using AutoEncoders certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/records/P8AUGU6NR9SQ" target="_blank" rel="noopener">Image Denoising Using AutoEncoders</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="projects coursera" data-title="Image Classification with TensorFlow">
+					<button type="button" aria-label="Enlarge: Image Classification with TensorFlow">
+						<img src="assets/img/tf.webp" alt="Image Classification with TensorFlow certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.coursera.org/account/accomplishments/records/AQ5EUFV2S4QT" target="_blank" rel="noopener">Image Classification with TensorFlow</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Introduction to Python">
+					<button type="button" aria-label="Enlarge: Introduction to Python">
+						<img src="assets/img/dc1.webp" alt="Introduction to Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption>Introduction to Python <span class="chip">verification link unavailable</span></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Intermediate Python">
+					<button type="button" aria-label="Enlarge: Intermediate Python">
+						<img src="assets/img/dc2.webp" alt="Intermediate Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption>Intermediate Python <span class="chip">verification link unavailable</span></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Data Manipulation with pandas">
+					<button type="button" aria-label="Enlarge: Data Manipulation with pandas">
+						<img src="assets/img/dc3.webp" alt="Data Manipulation with pandas certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/0cb3da7cdd9114283f27861224c6be5d73e54bc0" target="_blank" rel="noopener">Data Manipulation with pandas</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Joining Data with pandas">
+					<button type="button" aria-label="Enlarge: Joining Data with pandas">
+						<img src="assets/img/dc4-2.webp" alt="Joining Data with pandas certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/acb11256ab91800cff489e5add9a8750570cdac3" target="_blank" rel="noopener">Joining Data with pandas</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Introduction to Data Visualization with Matplotlib">
+					<button type="button" aria-label="Enlarge: Introduction to Data Visualization with Matplotlib">
+						<img src="assets/img/dc5.webp" alt="Introduction to Data Visualization with Matplotlib certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/11ef40bc52726606cd33ed0a13b293e9cb16cc6c" target="_blank" rel="noopener">Introduction to Data Visualization with Matplotlib</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Introduction to Data Visualization with Seaborn">
+					<button type="button" aria-label="Enlarge: Introduction to Data Visualization with Seaborn">
+						<img src="assets/img/dc6.webp" alt="Introduction to Data Visualization with Seaborn certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/8da257d76f5ea4da21ef0be17736ac058e196e4a" target="_blank" rel="noopener">Introduction to Data Visualization with Seaborn</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Python Data Science Toolbox (Part 1)">
+					<button type="button" aria-label="Enlarge: Python Data Science Toolbox (Part 1)">
+						<img src="assets/img/dc7.webp" alt="Python Data Science Toolbox (Part 1) certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/c44aff2f6242c13680720607520efd8c9771bc48" target="_blank" rel="noopener">Python Data Science Toolbox (Part 1)</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Python Data Science Toolbox (Part 2)">
+					<button type="button" aria-label="Enlarge: Python Data Science Toolbox (Part 2)">
+						<img src="assets/img/dc8.webp" alt="Python Data Science Toolbox (Part 2) certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/fc56f21e9d59ea62fa6064d27b9b72b7d2488fab" target="_blank" rel="noopener">Python Data Science Toolbox (Part 2)</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Intermediate Data Visualization with Seaborn">
+					<button type="button" aria-label="Enlarge: Intermediate Data Visualization with Seaborn">
+						<img src="assets/img/dc9.webp" alt="Intermediate Data Visualization with Seaborn certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/1f1bddffdc852a698861632fd9b9d26bc76e2cb3" target="_blank" rel="noopener">Intermediate Data Visualization with Seaborn</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Introduction to Importing Data in Python">
+					<button type="button" aria-label="Enlarge: Introduction to Importing Data in Python">
+						<img src="assets/img/dc10.webp" alt="Introduction to Importing Data in Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/1f1cfbaea18ce4f725d5d6d3cd808cb3ab721cbc" target="_blank" rel="noopener">Introduction to Importing Data in Python</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Intermediate Importing Data in Python">
+					<button type="button" aria-label="Enlarge: Intermediate Importing Data in Python">
+						<img src="assets/img/dc11.webp" alt="Intermediate Importing Data in Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/6c57818a698332751ea2a02abe206fd659d7ff05" target="_blank" rel="noopener">Intermediate Importing Data in Python</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Cleaning Data in Python">
+					<button type="button" aria-label="Enlarge: Cleaning Data in Python">
+						<img src="assets/img/dc12.webp" alt="Cleaning Data in Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/dd8e5b7278eec8dc888aa580a94f34a6a7335e6c" target="_blank" rel="noopener">Cleaning Data in Python</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Working with Dates and Times in Python">
+					<button type="button" aria-label="Enlarge: Working with Dates and Times in Python">
+						<img src="assets/img/dc13.webp" alt="Working with Dates and Times in Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/5895cb5fd3aea518e551c8b0b5d29e35af2e2fbe" target="_blank" rel="noopener">Working with Dates and Times in Python</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Writing Functions in Python">
+					<button type="button" aria-label="Enlarge: Writing Functions in Python">
+						<img src="assets/img/dc14.webp" alt="Writing Functions in Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/616f5e7b353076356cc780a95a724ace87195456" target="_blank" rel="noopener">Writing Functions in Python</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Exploratory Data Analysis in Python">
+					<button type="button" aria-label="Enlarge: Exploratory Data Analysis in Python">
+						<img src="assets/img/dc15.webp" alt="Exploratory Data Analysis in Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/a19a8b588ead7535a5a3259d34dacc3b85bbbf8c" target="_blank" rel="noopener">Exploratory Data Analysis in Python</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Analyzing Police Activity with pandas">
+					<button type="button" aria-label="Enlarge: Analyzing Police Activity with pandas">
+						<img src="assets/img/dc16.webp" alt="Analyzing Police Activity with pandas certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/624253528128d6ab8c1169978d14a5e9dbecee71" target="_blank" rel="noopener">Analyzing Police Activity with pandas</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Statistical Thinking in Python (Part 1)">
+					<button type="button" aria-label="Enlarge: Statistical Thinking in Python (Part 1)">
+						<img src="assets/img/dc17.webp" alt="Statistical Thinking in Python (Part 1) certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/32e150c5c59406fe8c05c7014992940e967fdd6b" target="_blank" rel="noopener">Statistical Thinking in Python (Part 1)</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Statistical Thinking in Python (Part 2)">
+					<button type="button" aria-label="Enlarge: Statistical Thinking in Python (Part 2)">
+						<img src="assets/img/dc18.webp" alt="Statistical Thinking in Python (Part 2) certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/fcf879a3e586de4f69e078d904c4761e9bc69a96" target="_blank" rel="noopener">Statistical Thinking in Python (Part 2)</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Supervised Learning with scikit-learn">
+					<button type="button" aria-label="Enlarge: Supervised Learning with scikit-learn">
+						<img src="assets/img/dc19.webp" alt="Supervised Learning with scikit-learn certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/562158598cd616943bf00d8b0c9f56dfefd3fb67" target="_blank" rel="noopener">Supervised Learning with scikit-learn</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Unsupervised Learning in Python">
+					<button type="button" aria-label="Enlarge: Unsupervised Learning in Python">
+						<img src="assets/img/dc20.webp" alt="Unsupervised Learning in Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/8416f55f0a3d66e937107943eb3dd11b5a06e9eb" target="_blank" rel="noopener">Unsupervised Learning in Python</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Machine Learning with Tree-Based Models in Python">
+					<button type="button" aria-label="Enlarge: Machine Learning with Tree-Based Models in Python">
+						<img src="assets/img/dc21.webp" alt="Machine Learning with Tree-Based Models in Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/f88849961ea95d796c8e2b7f60401b5e02a97bf9" target="_blank" rel="noopener">Machine Learning with Tree-Based Models in Python</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Case Study: School Budgeting with ML in Python">
+					<button type="button" aria-label="Enlarge: Case Study: School Budgeting with ML in Python">
+						<img src="assets/img/dc22.webp" alt="Case Study: School Budgeting with ML in Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/b09c45e8dac3db348f56565ed2cdcf2c86af3959" target="_blank" rel="noopener">Case Study: School Budgeting with ML in Python</a></figcaption>
+				</figure>
+
+				<figure class="gallery-item" data-tags="datacamp" data-title="Cluster Analysis in Python">
+					<button type="button" aria-label="Enlarge: Cluster Analysis in Python">
+						<img src="assets/img/dc23.webp" alt="Cluster Analysis in Python certificate" loading="lazy" width="900" height="675">
+					</button>
+					<figcaption><a href="https://www.datacamp.com/statement-of-accomplishment/course/c21124fa8928dc29156fc9a0e4463e806ace11a0" target="_blank" rel="noopener">Cluster Analysis in Python</a></figcaption>
+				</figure>
 				</div>
 			</div>
+		</section>
+	</main>
+
+	<!-- lightbox used by the gallery -->
+	<dialog class="lightbox" id="lightbox">
+		<img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="">
+		<div class="lightbox-bar">
+			<p></p>
+			<button class="btn lightbox-close" type="button" aria-label="Close image">Close</button>
 		</div>
-	</section>
+	</dialog>
 
-
+	<!-- ============================ FOOTER ============================ -->
 	<footer class="site-footer">
 		<div class="container">
-
-
-			<div class="row mb-5" id="profiles">
-				<div class="col-md-12 text-center">
-					<p>
-						<a href="https://www.linkedin.com/in/utshabkg/" class="social-item" target="_blank"
-							title='LinkedIn'><span class="icon-linkedin2"></span></a>
-						<a href="https://www.github.com/utshabkg" class="social-item" target="_blank"
-							title='Github'><span class="icon-github2"></span></a>
-						<a href="https://www.facebook.com/utshabkg" class="social-item" target="_blank"
-							title='Facebook'><span class="icon-facebook2"></span></a>
-						<a href="https://www.twitter.com/utshabkg" class="social-item" target="_blank"
-							title='Twitter'><span class="icon-twitter"></span></a>
-						<a href="https://www.instagram.com/utshabkg/" class="social-item" target="_blank"
-							title='Instagram'><span class="icon-instagram2"></span></a>
-					</p>
-					<p>
-						<a href="https://utshabkg.medium.com/" class="social-item" target="_blank"
-							title='Medium'><span class=""><img
-									src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg"
-									alt="utshabkg" height="30" width="30" /></span></a>
-						<a href="https://www.kaggle.com/utshabkumarghosh" class="social-item" target="_blank"
-							title='Kaggle'><span class=""><img
-									src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/kaggle.svg" height="30"
-									width="30"></span></a>
-						<a href="https://codeforces.com/profile/utshab_1603022" class="social-item" target="_blank"
-							title='Codeforces'><span class=""><img
-									src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codeforces.svg"
-									alt="utshab_1603022" height="30" width="30" /></span></a>
-						<a href="https://www.hackerearth.com/@kumarutshab/" class="social-item" target="_blank"
-							title='Hackerearth'><span class=""><img
-									src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/hackerearth.svg"
-									alt="kumarutshab" height="30" width="30" /></span></a>
-					</p>
-				</div>
-			</div>
-			<div class="row mb-5">
-				<p class="col-12 text-center">
-
-					&copy;
-					<script>
-						document.write(new Date().getFullYear());
-					</script> All rights reserved | <a href="https://www.facebook.com/utshabkg" target="_blank"
-						class="btn btn-dark btn-utshab">Utshab Kumar Ghosh</a>
-				</p>
-			</div>
-
-
+			<p class="footer-note">© <span id="year">2026</span> Utshab Kumar Ghosh ·
+				<a href="index.html">Back to portfolio</a>
+			</p>
 		</div>
 	</footer>
 
+	<button class="back-to-top" type="button" aria-label="Back to top">
+		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+			stroke-linejoin="round" aria-hidden="true">
+			<line x1="12" y1="19" x2="12" y2="5"></line>
+			<polyline points="5 12 12 5 19 12"></polyline>
+		</svg>
+	</button>
 
-	<!-- Submit the Form to Google Using "AJAX" -->
-	<!-- <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script> -->
-
-	<script src="js/vendor/jquery.min.js"></script>
-	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/vendor/popper.min.js"></script>
-	<script src="js/vendor/bootstrap.min.js"></script>
-
-	<script src="js/vendor/jquery.easing.1.3.js"></script>
-
-	<script src="js/vendor/jquery.stellar.min.js"></script>
-	<script src="js/vendor/jquery.waypoints.min.js"></script>
-
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-	<script src="js/custom.js"></script>
-
-	<!-- Google Map -->
-	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    	<script src="js/google-map.js"></script> -->
-
+	<script src="js/main.js" defer></script>
 </body>
 
 </html>
