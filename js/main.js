@@ -1,4 +1,4 @@
-/* Utshab Kumar Ghosh — portfolio scripts.
+/* Utshab Kumar Ghosh - portfolio scripts.
    Everything is plain vanilla JS; each feature checks for its elements
    first, so this single file safely serves every page. */
 (function () {
@@ -169,15 +169,4 @@
   /* ---------- footer year ---------- */
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
-
-  /* ---------- GitHub contribution calendar (index only) ---------- */
-  var ghCalendar = document.querySelector(".gh-calendar");
-  if (ghCalendar && typeof GitHubCalendar !== "undefined") {
-    GitHubCalendar(ghCalendar, "utshabkg", { responsive: true, tooltips: true })
-      .catch(function () {
-        ghCalendar.innerHTML =
-          '<p class="gh-fallback">Contribution graph is unavailable right now — ' +
-          'see it live on <a href="https://github.com/utshabkg" target="_blank" rel="noopener">GitHub</a>.</p>';
-      });
-  }
 })();

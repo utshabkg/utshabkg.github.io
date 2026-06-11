@@ -31,6 +31,23 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
+	<!-- Google Analytics (GA4). To activate: get your Measurement ID at
+	     analytics.google.com (Admin > Data streams > Web), then replace
+	     G-XXXXXXXXXX below. Until then this loads nothing. -->
+	<script>
+		(function () {
+			var GA_ID = "G-XXXXXXXXXX"; // <- paste your GA4 id here
+			if (/^G-X+$/.test(GA_ID)) return;
+			var el = document.createElement("script");
+			el.async = true;
+			el.src = "https://www.googletagmanager.com/gtag/js?id=" + GA_ID;
+			document.head.appendChild(el);
+			window.dataLayer = window.dataLayer || [];
+			function gtag() { dataLayer.push(arguments); }
+			gtag("js", new Date());
+			gtag("config", GA_ID);
+		})();
+	</script>
 </head>
 
 <body>
@@ -52,7 +69,7 @@
 			</nav>
 
 			<div class="nav-cta">
-				<a class="btn btn-primary" href="assets/pdf/cv.pdf" target="_blank" rel="noopener">
+				<a class="btn btn-primary" href="https://drive.google.com/file/d/1HHYCg4XPeXsL4_AD5uh74a5Ojk_NEhxw/view?usp=sharing" target="_blank" rel="noopener">
 					<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
 						stroke-linejoin="round" aria-hidden="true">
 						<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>

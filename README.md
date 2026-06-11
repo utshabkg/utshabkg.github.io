@@ -3,7 +3,7 @@
 [![Author](https://img.shields.io/badge/author-utshabkg-red)](https://github.com/utshabkg/)
 [![Stars](https://img.shields.io/github/stars/utshabkg/utshabkg.github.io?style=social)](https://github.com/utshabkg/utshabkg.github.io/stargazers)
 
-Personal portfolio of **Utshab Kumar Ghosh** — ML Engineer & Researcher.
+Personal portfolio of **Utshab Kumar Ghosh** - ML Engineer & Researcher.
 Live at <https://utshabkg.github.io/>.
 
 Zero-build static site: plain HTML + one stylesheet + one small JS file.
@@ -17,9 +17,8 @@ Edit → commit → push to `master` → GitHub Pages deploys automatically.
 | `gallery.html` | Certificate gallery with filters and a lightbox. |
 | `404.html` | Not-found page. |
 | `css/styles.css` | The only stylesheet. Colors/fonts/spacing are CSS variables at the top ("design tokens"). |
-| `js/main.js` | The only script: theme toggle, mobile nav, filters, lightbox, GitHub calendar. |
+| `js/main.js` | The only script: theme toggle, mobile nav, filters, lightbox. |
 | `assets/img/` | Optimized images (WebP, lowercase names, no spaces). |
-| `assets/pdf/cv.pdf` | The CV. **Keep this filename** — everything links to it. Just overwrite the file to update. |
 
 ## Common edits
 
@@ -27,7 +26,7 @@ Edit → commit → push to `master` → GitHub Pages deploys automatically.
 - **New project** → copy an `<article class="project-card">` block; set `data-tags` to `ml`, `web` and/or `other`.
 - **New certificate** → resize the image to ~900px-wide WebP, drop it in `assets/img/`, copy a
   `<figure class="gallery-item">` block in `gallery.html`.
-- **New CV** → overwrite `assets/pdf/cv.pdf`.
+- **New CV** → replace the file inside the existing Google Drive share (all CV buttons point to that Drive link).
 - **Change colors** → edit the token blocks at the top of `css/styles.css` (`:root` = dark, `[data-theme="light"]` = light).
 
 ## Checks before pushing

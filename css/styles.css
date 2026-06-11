@@ -49,6 +49,11 @@
   --accent-strong: #d3e487;
   --accent-contrast: #1d2308;  /* text on accent buttons */
   --accent-soft: rgba(189, 210, 102, 0.12);
+  /* secondary category colors (web = teal, other = orange) */
+  --teal: #5fd4c4;
+  --teal-soft: rgba(95, 212, 196, 0.12);
+  --orange: #f5a268;
+  --orange-soft: rgba(245, 162, 104, 0.12);
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
@@ -66,6 +71,10 @@
   --accent-strong: #4c5a16;
   --accent-contrast: #ffffff;
   --accent-soft: rgba(93, 110, 30, 0.1);
+  --teal: #0e7569;
+  --teal-soft: rgba(14, 117, 105, 0.1);
+  --orange: #a44e0e;
+  --orange-soft: rgba(164, 78, 14, 0.1);
   --shadow: 0 10px 30px rgba(23, 27, 34, 0.08);
 }
 
@@ -408,7 +417,24 @@ img {
 /* ====================== 5. HERO ====================== */
 
 .hero {
+  position: relative;
+  overflow: hidden;
   padding-block: clamp(4rem, 3rem + 6vw, 8rem);
+}
+
+/* soft color glow behind the hero */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(580px 320px at 78% 18%, var(--accent-soft), transparent 70%),
+    radial-gradient(460px 280px at 12% 85%, var(--teal-soft), transparent 70%);
+}
+
+.hero .container {
+  position: relative;
 }
 
 .hero-grid {
@@ -432,6 +458,15 @@ img {
   font-weight: 800;
   letter-spacing: -0.025em;
   margin-bottom: 0.5rem;
+}
+
+@supports (background-clip: text) or (-webkit-background-clip: text) {
+  .hero h1 {
+    background: linear-gradient(100deg, var(--heading) 35%, var(--accent) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 
 .hero-role {
@@ -640,6 +675,25 @@ img {
   display: none;
 }
 
+/* category-colored chips: lime for ML (default), teal for web, orange for other */
+.project-card[data-tags~="web"] .chip-accent {
+  color: var(--teal);
+  background: var(--teal-soft);
+}
+
+.project-card[data-tags~="other"] .chip-accent {
+  color: var(--orange);
+  background: var(--orange-soft);
+}
+
+.project-card[data-tags~="web"]:hover {
+  border-color: var(--teal);
+}
+
+.project-card[data-tags~="other"]:hover {
+  border-color: var(--orange);
+}
+
 .project-card h3 {
   font-size: 1.05rem;
   margin: 0;
@@ -815,6 +869,27 @@ img {
   letter-spacing: 0.07em;
   color: var(--text-muted);
   margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* colored dot before each skill group, cycling through the palette */
+.skill-group h3::before {
+  content: "";
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--accent);
+  flex: none;
+}
+
+.skill-group:nth-of-type(3n + 2) h3::before {
+  background: var(--teal);
+}
+
+.skill-group:nth-of-type(3n) h3::before {
+  background: var(--orange);
 }
 
 .skill-group ul {
@@ -881,6 +956,27 @@ img {
 
 .achievement-card {
   border-top: 3px solid var(--accent);
+}
+
+/* give each achievement its own color, like the old site */
+.achievement-card:nth-of-type(2) {
+  border-top-color: var(--teal);
+}
+
+.achievement-card:nth-of-type(2) h3 {
+  color: var(--teal);
+}
+
+.achievement-card:nth-of-type(3) {
+  border-top-color: var(--orange);
+}
+
+.achievement-card:nth-of-type(3) h3 {
+  color: var(--orange);
+}
+
+.achievement-card:nth-of-type(1) h3 {
+  color: var(--accent);
 }
 
 .achievement-card h3 {
