@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Asguard — Guarding your assets</title>
+<meta name="description" content="Asguard tracks car and home maintenance. No account, works offline, your data stays on your device.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #ffffff; --fg: #16211d; --muted: #5b6b65;
+    --accent: #1f6b58; --card: #f2f7f5; --line: #dde7e3;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #101614; --fg: #e6efeb; --muted: #9fb2ab;
+      --accent: #6fd3b4; --card: #182220; --line: #26332f;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  header.site { border-bottom: 1px solid var(--line); }
+  header.site .wrap {
+    padding: 1.1rem 1.25rem; display: flex; flex-wrap: wrap;
+    gap: .75rem 1.25rem; align-items: baseline;
+  }
+  .brand { font-weight: 700; font-size: 1.15rem; color: var(--fg); text-decoration: none; }
+  .brand span { color: var(--accent); }
+  nav a { color: var(--muted); text-decoration: none; margin-right: 1rem; font-size: .95rem; }
+  nav a:hover, nav a:focus { color: var(--accent); text-decoration: underline; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 1.5rem 0 .5rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.2rem; margin: 2.25rem 0 .5rem; }
+  h3 { font-size: 1.02rem; margin: 1.5rem 0 .4rem; }
+  a { color: var(--accent); }
+  code {
+    background: var(--card); padding: .12em .35em;
+    border-radius: 4px; font-size: .92em;
+  }
+  blockquote {
+    margin: 1.25rem 0; padding: .85rem 1.1rem; background: var(--card);
+    border-left: 3px solid var(--accent); border-radius: 0 8px 8px 0;
+  }
+  blockquote p { margin: .4rem 0; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.5rem 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .3rem 0; }
+  em { color: var(--muted); }
+  .lede { font-size: 1.1rem; color: var(--muted); margin-top: .25rem; }
+  .points { list-style: none; padding: 0; margin: 2rem 0; display: grid; gap: .75rem; }
+  .points li {
+    background: var(--card); border: 1px solid var(--line);
+    border-radius: 10px; padding: .9rem 1.1rem; margin: 0;
+  }
+  .points strong { display: block; }
+  .points span { color: var(--muted); font-size: .95rem; }
+  footer.site {
+    border-top: 1px solid var(--line); margin-top: 3rem;
+    color: var(--muted); font-size: .92rem;
+  }
+  footer.site .wrap { padding: 1.5rem 1.25rem; }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+  th, td { text-align: left; padding: .5rem .6rem; border-bottom: 1px solid var(--line); }
+  .scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="brand" href="./">Asguard <span>&middot; Guarding your assets</span></a>
+  <nav>
+    <a href="./">Home</a><a href="./privacy.html">Privacy</a><a href="./terms.html">Terms</a>
+  </nav>
+</div></header>
+<main class="wrap">
+
+<h1>Asguard</h1>
+<p class="lede">Guarding your assets &mdash; car and home maintenance in one app.</p>
+
+<p>Asguard keeps track of what your car and your home need, and reminds you before
+it is overdue. Pick your car and it loads the factory maintenance schedule for
+that make, model and year. Add your home and it loads the filters, alarms,
+gutters and seasonal jobs that are easy to forget.</p>
+
+<ul class="points">
+  <li><strong>No account</strong><span>Nothing to sign up for. Open it and use it.</span></li>
+  <li><strong>Works offline</strong><span>Everything runs on your phone, with no connection needed.</span></li>
+  <li><strong>Your data stays on your device</strong><span>No servers, no analytics, no ads, no tracking.</span></li>
+  <li><strong>Real schedules</strong><span>Factory intervals for popular models, and every one of them editable.</span></li>
+  <li><strong>Backups you control</strong><span>Export whenever you want, or have it back up automatically to a folder you choose.</span></li>
+</ul>
+
+<p>Your owner's manual is always the authority. Asguard gives you starting points
+and remembers them for you &mdash; see the <a href="./terms.html">Terms</a>.</p>
+
+<h2>Support</h2>
+<p>Questions, bugs, or a maintenance schedule you would like added? Email
+<a href="mailto:support.asguard@gmail.com">support.asguard@gmail.com</a>.</p>
+
+</main>
+<footer class="site"><div class="wrap">
+  Asguard &middot; Contact <a href="mailto:support.asguard@gmail.com">support.asguard@gmail.com</a>
+</div></footer>
+</body>
+</html>
