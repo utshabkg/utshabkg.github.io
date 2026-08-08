@@ -78,7 +78,7 @@
 </div></header>
 <main class="wrap">
 <h1>Asguard Privacy Policy</h1>
-<p><em>Last updated: 6 August 2026</em></p>
+<p><em>Last updated: 8 August 2026</em></p>
 <p><strong>Short version: Asguard has no servers and collects nothing. It never sends your data anywhere. The one exception is not the app at all, it is Android’s own backup, which may copy the app’s data to your own Google account if you have that turned on. That section is below and it is worth reading.</strong></p>
 <p>Asguard ("the app") is an offline car and home maintenance tracker. It is designed with privacy as a core feature: there is no account, no sign-in, no ads, and no analytics.</p>
 <h2>What data the app stores</h2>
@@ -88,6 +88,7 @@
 <li>Maintenance tasks, schedules, and due dates</li>
 <li>Completion records, including dates, costs, notes, and odometer readings</li>
 <li>Receipt photos you choose to attach</li>
+<li>Documents you file against a car or home, such as a photo or PDF of a licence, insurance card, registration or title</li>
 <li>App settings</li>
 </ul>
 <p>Asguard never sends any of it anywhere. We have no servers, so we never receive, see, or store your data, and there is nowhere for it to go. Android’s own backup is separate and is covered below.</p>
@@ -105,7 +106,7 @@
 <li><strong>Run at startup</strong>, so your reminders survive a restart.</li>
 <li><strong>Vibrate</strong>, so a reminder can buzz.</li>
 </ul>
-<p>The app requests <strong>no camera permission and no photo/media permission</strong>. When you add a receipt photo, the app uses your device's built-in system photo picker or camera. Any photo you attach is copied into the app's private storage on your device. See <em>Device (OS-level) backup</em> below for the one case in which recent receipt photos are included in your own Google account backup.</p>
+<p>The app requests <strong>no camera permission and no photo/media permission</strong>. When you add a receipt photo or a document, the app uses your device's built-in system photo picker, camera or file picker. Anything you attach is copied into the app's private storage on your device. When you open a document, Asguard hands that one file to whatever app on your phone reads that kind, for as long as it is showing it. No other app is given access to anything else. See <em>Device (OS-level) backup</em> below for the one case in which recent receipt photos are included in your own Google account backup.</p>
 <h2>Backups you create</h2>
 <p>Asguard lets you export a backup file containing your data and receipt photos. This file is created only when you ask for it, and it is handed to you (for example, to save to your own storage or share to your own cloud drive). The app does not upload it anywhere on its own. Once you export a file, how it is stored is under your control.</p>
 <h2>Automatic backup to a folder you choose</h2>
@@ -120,10 +121,10 @@
 <p>Depending on your Android device's own backup settings, the Android operating system may include the app's data in the standard device backup to your personal Google account. This is a function of your device and your Google account settings, governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. Asguard has no server and never sends your data to us or to any third party.</p>
 <p>You should know exactly what that includes, because Asguard makes a deliberate choice here:</p>
 <ul>
-<li>Your <strong>records</strong> (assets, tasks, service history, fuel log and settings) are included, so they come back when you install Asguard on a new phone.</li>
-<li>Your <strong>receipt photos are excluded</strong> from that backup by default, because Android limits how much an app may store. Going over that limit makes Android skip the whole backup, records and all.</li>
-<li>So that your photos are not simply lost with a broken phone, Asguard writes a <strong>size-capped bundle of your most recent receipt photos</strong> (up to about 12&nbsp;MB) into the data Android backs up. Those photos therefore travel to your own Google account along with your records, and are restored automatically on a new phone. Older photos beyond that limit are not included.</li>
-<li>You can see exactly what is and is not covered at any time under <em>Settings &rsaquo; If you lost this phone today</em>, and you can protect every photo at full quality by choosing a backup folder.</li>
+<li>Your <strong>records</strong> (assets, tasks, service history, fuel log, the details of your documents and settings) are included, so they come back when you install Asguard on a new phone.</li>
+<li>Your <strong>receipt photos and documents are excluded</strong> from that backup by default, because Android limits how much an app may store. Going over that limit makes Android skip the whole backup, records and all.</li>
+<li>So that they are not simply lost with a broken phone, Asguard writes a <strong>size-capped bundle of your documents and most recent receipt photos</strong> (up to about 12&nbsp;MB) into the data Android backs up. Documents go in first, because an insurance card matters more than a fuel receipt, and anything too large to fit is left out rather than being allowed to break the backup. Those photos therefore travel to your own Google account along with your records, and are restored automatically on a new phone. Older photos beyond that limit are not included.</li>
+<li>You can see exactly what is and is not covered at any time under <em>Settings &rsaquo; If you lost this phone today</em>, and you can protect every photo and document at full quality by choosing a backup folder.</li>
 </ul>
 <p>All of this goes to <em>your</em> Google account, not ours. You can turn the device backup off entirely in your phone's backup settings.</p>
 <h2>Children's privacy</h2>
