@@ -255,6 +255,36 @@ img {
   font-weight: 600;
 }
 
+/* companion to .chip-accent — same shape, secondary hue (used for "Code" links) */
+.chip-teal {
+  background: var(--teal-soft);
+  border-color: transparent;
+  color: var(--teal);
+  font-weight: 600;
+}
+
+/* chips that are actual links get a hover/focus affordance */
+a.chip {
+  transition: background 0.15s var(--ease), border-color 0.15s var(--ease);
+}
+
+a.chip:hover,
+a.chip:focus-visible {
+  border-color: currentColor;
+}
+
+a.chip-accent:hover,
+a.chip-accent:focus-visible {
+  background: var(--accent-soft); /* fallback where color-mix() is unsupported */
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+a.chip-teal:hover,
+a.chip-teal:focus-visible {
+  background: var(--teal-soft);
+  background: color-mix(in srgb, var(--teal) 20%, transparent);
+}
+
 .card {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -603,6 +633,22 @@ img {
 .pub-meta b {
   color: var(--text);
   font-weight: 600;
+}
+
+/* the venue is linked inline here rather than as a separate "Venue" chip */
+.pub-meta a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--border); /* fallback where color-mix() is unsupported */
+  text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent);
+  text-underline-offset: 0.2em;
+  transition: color 0.15s var(--ease), text-decoration-color 0.15s var(--ease);
+}
+
+.pub-meta a:hover,
+.pub-meta a:focus-visible {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
 }
 
 .pub-links {
