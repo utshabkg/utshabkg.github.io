@@ -236,6 +236,26 @@ img {
   flex: none;
 }
 
+/* YouTube-branded action: brand red so the destination is obvious at a glance */
+.btn-youtube {
+  background: #ff0000;
+  border-color: #ff0000;
+  color: #ffffff;
+}
+
+.btn-youtube:hover,
+.btn-youtube:focus-visible {
+  background: #cc0000;
+  border-color: #cc0000;
+  color: #ffffff;
+}
+
+.btn-youtube svg {
+  width: 1.15em;
+  height: 1.15em;
+  fill: currentColor;
+}
+
 .chip {
   display: inline-block;
   padding: 0.25rem 0.75rem;
@@ -1141,10 +1161,28 @@ a.chip-teal:focus-visible {
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--space-2);
   max-width: 56rem;
   margin-inline: auto;
+}
+
+/* fixed track counts (rather than auto-fit) so .contact-actions can span
+   exactly the cells the four info cards leave empty on the last row */
+@media (min-width: 34rem) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid .contact-actions {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 52rem) {
+  .contact-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .contact-card {
@@ -1175,9 +1213,9 @@ a.chip-teal:focus-visible {
 .contact-actions {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   gap: 0.75rem;
-  margin-top: var(--space-4);
 }
 
 /* ====================== 15. FOOTER ====================== */
