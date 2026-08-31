@@ -516,6 +516,20 @@ var galleryTop = new Swiper(".swiper-container.testimonial", {
   },
 });
 
+// Make the testimonial thumbnails clickable.
+// The coverflow effect (depth 50 x modifier 6) pushes every non-active thumbnail
+// hundreds of pixels back in Z, and .swiper-wrapper is a transform-style:
+// preserve-3d box sitting at z = 0. Under preserve-3d the browser hit-tests by
+// 3D position, so the wrapper wins over the thumbnail beneath the cursor.
+// Swiper's updateClickedSlide() then finds no .swiper-slide, leaves clickedIndex
+// undefined, and Thumbs.onThumbClick() returns before reaching slideTo().
+// Taking the wrapper out of hit-testing hands the click back to the thumbnail.
+// pointer-events affects hit-testing only, never layout or painting.
+galleryThumbs.wrapperEl.style.pointerEvents = "none";
+for (var thumbIndex = 0; thumbIndex < galleryThumbs.slides.length; thumbIndex += 1) {
+  galleryThumbs.slides[thumbIndex].style.pointerEvents = "auto";
+}
+
 // GitHub Contribution Widget Functionality
 var initGitHubWidget = function () {
   const username = "utshabkg";
